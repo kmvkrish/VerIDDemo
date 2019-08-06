@@ -8,7 +8,8 @@
 
 #import <React/RCTViewManager.h>
 #import <React/RCTBridge.h>
-
+#import <VerIDCore/VerIDCore-Swift.h>
+#import <VerIDUI/VerIDUI-Swift.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

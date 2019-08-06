@@ -8,19 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* VerIDDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VerIDDemoTests.m */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* VerIDDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VerIDDemoTests.m */; };
-		6303F33E22DF3A8D005FAAB5 /* CustomVerIDSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303F33D22DF3A8D005FAAB5 /* CustomVerIDSession.swift */; };
-		63A2137822DE317C009C0E7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A2137722DE317C009C0E7B /* Main.storyboard */; };
-		63A2137B22DE31D0009C0E7B /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A2137A22DE31D0009C0E7B /* ContainerViewController.m */; };
-		63A2137E22DE31E4009C0E7B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A2137D22DE31E4009C0E7B /* MainViewController.m */; };
-		63A2138122DE3235009C0E7B /* AuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A2138022DE3235009C0E7B /* AuthenticationViewController.m */; };
+		3BFFDAEF22FA0010007BDB95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFDAEE22FA0010007BDB95 /* main.m */; };
+		3BFFDAF022FA0013007BDB95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFFDAEE22FA0010007BDB95 /* main.m */; };
+		3BFFDAF122FA0019007BDB95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		3BFFDAF222FA001A007BDB95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		3BFFDAF522FA026E007BDB95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BFFDAF422FA026E007BDB95 /* Main.storyboard */; };
 		63A2139B22DE35FE009C0E7B /* ContainerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A2139A22DE35FE009C0E7B /* ContainerViewManager.m */; };
 		63A2139E22DE3653009C0E7B /* RCTContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A2139D22DE3653009C0E7B /* RCTContainerView.m */; };
 		6574CEE94EA7A3C792EC9E2C /* libPods-VerIDDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC0D2BE04C6A1C003E306D5 /* libPods-VerIDDemo.a */; };
@@ -57,21 +53,14 @@
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = VerIDDemo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = VerIDDemo/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = VerIDDemo/main.m; sourceTree = "<group>"; };
 		1FC0D2BE04C6A1C003E306D5 /* libPods-VerIDDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VerIDDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* VerIDDemo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VerIDDemo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* VerIDDemo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VerIDDemo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BFFDAEE22FA0010007BDB95 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = VerIDDemo/main.m; sourceTree = "<group>"; };
+		3BFFDAF422FA026E007BDB95 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = VerIDDemo/Main.storyboard; sourceTree = "<group>"; };
 		43D6A68C410B7AA789241EAE /* Pods-VerIDDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerIDDemoTests.release.xcconfig"; path = "Target Support Files/Pods-VerIDDemoTests/Pods-VerIDDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		5EA8A4208374A882E5070917 /* libPods-VerIDDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VerIDDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6303F33C22DF3A8D005FAAB5 /* VerIDDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VerIDDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		6303F33D22DF3A8D005FAAB5 /* CustomVerIDSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomVerIDSession.swift; path = VerIDDemo/CustomVerIDSession.swift; sourceTree = "<group>"; };
-		63A2137722DE317C009C0E7B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = VerIDDemo/Main.storyboard; sourceTree = "<group>"; };
-		63A2137922DE31D0009C0E7B /* ContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ContainerViewController.h; path = VerIDDemo/ContainerViewController.h; sourceTree = "<group>"; };
-		63A2137A22DE31D0009C0E7B /* ContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ContainerViewController.m; path = VerIDDemo/ContainerViewController.m; sourceTree = "<group>"; };
-		63A2137C22DE31E4009C0E7B /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = VerIDDemo/MainViewController.h; sourceTree = "<group>"; };
-		63A2137D22DE31E4009C0E7B /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = VerIDDemo/MainViewController.m; sourceTree = "<group>"; };
-		63A2137F22DE3235009C0E7B /* AuthenticationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AuthenticationViewController.h; path = VerIDDemo/AuthenticationViewController.h; sourceTree = "<group>"; };
-		63A2138022DE3235009C0E7B /* AuthenticationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AuthenticationViewController.m; path = VerIDDemo/AuthenticationViewController.m; sourceTree = "<group>"; };
 		63A2139922DE35FE009C0E7B /* ContainerViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ContainerViewManager.h; path = VerIDDemo/ContainerViewManager.h; sourceTree = "<group>"; };
 		63A2139A22DE35FE009C0E7B /* ContainerViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ContainerViewManager.m; path = VerIDDemo/ContainerViewManager.m; sourceTree = "<group>"; };
 		63A2139C22DE3653009C0E7B /* RCTContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTContainerView.h; path = VerIDDemo/RCTContainerView.h; sourceTree = "<group>"; };
@@ -145,25 +134,18 @@
 		13B07FAE1A68108700A75B9A /* VerIDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3BFFDAF422FA026E007BDB95 /* Main.storyboard */,
+				3BFFDAEE22FA0010007BDB95 /* main.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
-				13B07FB71A68108700A75B9A /* main.m */,
-				63A2137722DE317C009C0E7B /* Main.storyboard */,
-				63A2137922DE31D0009C0E7B /* ContainerViewController.h */,
-				63A2137A22DE31D0009C0E7B /* ContainerViewController.m */,
-				63A2137C22DE31E4009C0E7B /* MainViewController.h */,
-				63A2137D22DE31E4009C0E7B /* MainViewController.m */,
-				63A2137F22DE3235009C0E7B /* AuthenticationViewController.h */,
-				63A2138022DE3235009C0E7B /* AuthenticationViewController.m */,
 				63A2139922DE35FE009C0E7B /* ContainerViewManager.h */,
 				63A2139A22DE35FE009C0E7B /* ContainerViewManager.m */,
 				63A2139C22DE3653009C0E7B /* RCTContainerView.h */,
 				63A2139D22DE3653009C0E7B /* RCTContainerView.m */,
-				6303F33D22DF3A8D005FAAB5 /* CustomVerIDSession.swift */,
 				6303F33C22DF3A8D005FAAB5 /* VerIDDemo-Bridging-Header.h */,
 			);
 			name = VerIDDemo;
@@ -326,12 +308,13 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 5456696HR3;
+						DevelopmentTeam = CSD8L9EK66;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
@@ -375,7 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63A2137822DE317C009C0E7B /* Main.storyboard in Resources */,
+				3BFFDAF522FA026E007BDB95 /* Main.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -592,14 +575,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFFDAF122FA0019007BDB95 /* AppDelegate.m in Sources */,
+				3BFFDAEF22FA0010007BDB95 /* main.m in Sources */,
 				63A2139B22DE35FE009C0E7B /* ContainerViewManager.m in Sources */,
-				63A2138122DE3235009C0E7B /* AuthenticationViewController.m in Sources */,
-				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				6303F33E22DF3A8D005FAAB5 /* CustomVerIDSession.swift in Sources */,
-				63A2137B22DE31D0009C0E7B /* ContainerViewController.m in Sources */,
 				63A2139E22DE3653009C0E7B /* RCTContainerView.m in Sources */,
-				63A2137E22DE31E4009C0E7B /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,8 +586,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
-				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+				3BFFDAF022FA0013007BDB95 /* main.m in Sources */,
+				3BFFDAF222FA001A007BDB95 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +631,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E69F9609218F2F2EA5C31C86 /* Pods-VerIDDemoTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -676,7 +654,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43D6A68C410B7AA789241EAE /* Pods-VerIDDemoTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = VerIDDemoTests/Info.plist;
@@ -703,7 +680,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 5456696HR3;
+				DEVELOPMENT_TEAM = CSD8L9EK66;
 				INFOPLIST_FILE = VerIDDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -731,7 +708,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5456696HR3;
+				DEVELOPMENT_TEAM = CSD8L9EK66;
 				INFOPLIST_FILE = VerIDDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -756,6 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -772,6 +750,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.VerIDDemo-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -784,6 +764,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -800,6 +781,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.VerIDDemo-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};

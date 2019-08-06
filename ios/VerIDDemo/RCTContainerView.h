@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <React/RCTComponent.h>
+#import <VerIDUI/VerIDUI-Swift.h>
+#import <VerIDCore/VerIDCore-Swift.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RCTContainerView : UIView
+@interface RCTContainerView : UIView <VerIDFactoryDelegate, VerIDSessionDelegate, VerIDSessionViewDelegate>
+
+@property (nonatomic, copy) RCTBubblingEventBlock onSessionFinished;
+
+@property (nonatomic, copy) RCTBubblingEventBlock onSessionCanceled;
+
+- (void)startSession;
+
+- (void)stopSession;
 
 @end
 
