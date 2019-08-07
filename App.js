@@ -12,17 +12,20 @@ import {
   View,
   Text,
   StatusBar,
-  Button
+  Button,
+  UIManager,
+  findNodeHandle
 } from 'react-native';
 
-import ContainerView from './components/containerView';
+import VerIDSessionView from './components/VerIDSessionView';
 import CredentialsAuthView from './components/CredentialsAuthView';
 
 export default class App extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
-      authMode: "credentials"
+      authMode: "biometrics"
     };
   }
 
@@ -36,11 +39,35 @@ export default class App extends Component {
     });
   }
 
+  startSession = () => {
+    var handle = findNodeHandle(this.refs.verid);
+    if (!handle) {
+      return;
+    }
+    UIManager.dispatchViewManagerCommand(
+        handle,
+        UIManager.getViewManagerConfig('RCTSessionView').Commands.startSession,
+        [],
+    );
+  }
+
+  stopSession = () => {
+    var handle = findNodeHandle(this.refs.verid);
+    if (!handle) {
+      return;
+    }
+    UIManager.dispatchViewManagerCommand(
+        handle,
+        UIManager.getViewManagerConfig('RCTSessionView').Commands.stopSession,
+        []
+    );
+  }
+
   render() {
     return (
       <View style={styles.containerStyle}>
         {
-          this.state.authMode == "biometrics" ? <ContainerView style={styles.leftContainer} /> : null
+          this.state.authMode == "biometrics" ? <VerIDSessionView style={styles.leftContainer} ref="verid" /> : null
         }
         {
           this.state.authMode == "credentials" ? <CredentialsAuthView style={styles.leftContainer} /> : null
