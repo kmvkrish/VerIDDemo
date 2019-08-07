@@ -12,6 +12,7 @@
 
 @property VerIDSession *session;
 @property VerID *verid;
+@property UIViewController *viewController;
 
 @end
 
@@ -32,6 +33,8 @@
   self = [super init];
   if (self) {
     [self setTag:9999];
+    [self setViewController:[[UIViewController alloc] init]];
+    [self.viewController setView:self];
   }
   return self;
 }
@@ -83,19 +86,6 @@
   
 }
 
-- (void)layoutSubviews {
-  [super layoutSubviews];
-  for (UIView *subview in self.subviews) {
-    [subview setFrame:self.bounds];
-  }
-}
-
-- (void)didAddSubview:(UIView *)subview {
-  [super didAddSubview:subview];
-  [subview setTranslatesAutoresizingMaskIntoConstraints:NO];
-  [subview setFrame:self.bounds];
-}
-
 - (void)didMoveToWindow {
   if (self.window != nil) {
     [self startSession];
@@ -111,12 +101,27 @@
   callback();
 }
 
-- (void)addViewController:(UIViewController * _Nonnull)viewController {
-  for (UIView *subview in self.subviews) {
-    [subview removeFromSuperview];
+- (void)removeViewControllers {
+  for (UIViewController *child in [self.viewController childViewControllers]) {
+    [child willMoveToParentViewController:nil];
+    [child.view removeFromSuperview];
+    [child removeFromParentViewController];
   }
+}
+
+- (void)addViewController:(UIViewController * _Nonnull)viewController {
+  [self removeViewControllers];
+  [viewController willMoveToParentViewController:self.viewController];
+  [self.viewController addChildViewController:viewController];
   [viewController.view setTranslatesAutoresizingMaskIntoConstraints:NO];
   [self addSubview:viewController.view];
+  [NSLayoutConstraint activateConstraints:@[
+                                            [viewController.view.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:0],
+                                            [viewController.view.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:0],
+                                            [viewController.view.topAnchor constraintEqualToAnchor:self.topAnchor constant:0],
+                                            [viewController.view.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:0]
+                                            ]];
+  [viewController didMoveToParentViewController:self.viewController];
   if ([viewController canBecomeFirstResponder]) {
     [viewController becomeFirstResponder];
   }
